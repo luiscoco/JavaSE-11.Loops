@@ -41,4 +41,39 @@ do {
 
 This loop will run once, even if x is initially not less than 5.
 
+## 4. Enhanced for-loop
+
+Enhanced for loop, also known as the "for-each" loop in Java. It's used for iterating over collections like arrays or lists. 
+
+The for-each loop simplifies the process of iterating over arrays and collections. 
+
+It eliminates the need for explicit initialization, condition checking, and updating. 
+
+It is especially useful when you want to iterate through all elements in a collection without bothering about the index or size.
+
+```java
+// Example: Using for-each loop to iterate over an array
+int[] numbers = {1, 2, 3, 4, 5};
+
+for (int num : numbers) {
+    System.out.println(num);
+}
+```
+
+In this example, num takes on the value of each element in the numbers array in each iteration. The loop automatically iterates through all elements in the array without needing an explicit index.
+
+For iterating over other collections like lists, you can use the for-each loop as well:
+
+```java
+// Example: Using for-each loop to iterate over a list
+List<String> names = Arrays.asList("Alice", "Bob", "Charlie");
+
+for (String name : names) {
+    System.out.println(name);
+}
+```
+
+Here, name takes on the value of each element in the names list.
+
+The for-each loop is concise, easy to read, and reduces the chance of errors related to off-by-one errors in indexing. It's a great choice when you don't need to know the index and just want to iterate over the elements of a collection. 
 
